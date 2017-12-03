@@ -3,7 +3,7 @@
 {
   "name": "my-first-app",
   "version": "0.1.0",
-  "sources": ["src/day1"],
+  "sources": ["src/day1", "src/day2"],
   "package-specs": {
     "module": "commonjs",
     "in-source": false
