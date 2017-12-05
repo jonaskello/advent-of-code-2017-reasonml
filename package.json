@@ -14,8 +14,10 @@
     "clean": "bsb -clean-world",
     "start:bsb": "bsb -make-world -w",
     "start:node:day1": "nodemon ./lib/js/src/day1/day1.bs.js",
-    "start:node:day2": "nodemon ./lib/js/src/day2/day2.bs.js",
+    "start:node:day2_1": "nodemon ./lib/js/src/day2/day2_1.bs.js",
+    "start:node:day2_2": "nodemon ./lib/js/src/day2/day2_2.bs.js",
     "start:day1": "run-p -l start:bsb start:node:day1",
-    "start:day2": "run-p -l start:bsb start:node:day2"
+    "start:day2_1": "run-p -l start:bsb start:node:day2_1",
+    "start:day2_2": "run-p -l start:bsb start:node:day2_2"
   }
 }
