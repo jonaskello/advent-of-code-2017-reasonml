@@ -1,4 +1,4 @@
-let fold_lefti = (f, seed, l) => {
+let foldi_left = (f, seed, l) => {
   let (_, x) = List.fold_left(((n, acc), e) => (n + 1, f(n, acc, e)), (0, seed), l);
   x;
 };
@@ -9,7 +9,7 @@ let mapi_partial = (f, xs) => {
     | None => xs
     | Some(x) => [x, ...xs]
     };
-  List.rev(fold_lefti((n, acc, x) => prepend_option(f(n, x), acc), [], xs));
+  List.rev(foldi_left((n, acc, x) => prepend_option(f(n, x), acc), [], xs));
 };
 
 let combineWith = (x, a, skipIndex) =>
